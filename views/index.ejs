@@ -3,28 +3,22 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 col-12 mx-auto mb-4">
-            <h1 class=" bloghead">Blog Posts</h1>
+            <h1 class="bloghead">Blog Posts</h1>
             <a href="/new" class="btn btn-success mb-5  addbtn">Add Blog</a>
 
-            <% blogpost.forEach(blogpost => { %>
+            <%  blogpost.forEach(blogPost => { %> <!-- Use 'blogpost' instead of 'blogPosts' -->
             <div class="card mt-4  blog_posts">
                 <div class="card-body">
-                    <h5 class="card-title"><%= blogpost.title %></h5>
-                    <div class="card-subtitle text-muted mb-2"><%= blogpost.createdDate.toLocaleDateString()%></div>
+                    <h3 class="card-title"><%= blogPost.title %></h3>
+                    <div class="card-subtitle text-muted mb-2"><%= blogPost.createdDate.toLocaleDateString()%></div>
                     <div class="card-text mb-3">
-                        <p><%= blogpost.description %></p>
+                        <p><%= blogPost.description %></p>
                     </div>
                 </div>
-
             </div>
             <% }); %>
-
-
         </div>
-
     </div>
-
-
 </div>
 
 <%- include("partials/footer.ejs") %>

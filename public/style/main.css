@@ -13,7 +13,7 @@ body {
 }
 
 html {
-    font-size: 62.5%;
+    /* font-size: 59.5%; */
     height: 100%;
 }
 
@@ -27,24 +27,41 @@ html {
 
 
 .addbtn {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     margin-top: 10px;
     margin: 10px 5px 10px;
 
 }
 
 .blog_posts h5 {
-    font-size: 3rem;
+    font-size: 1rem;
 }
 
 .blog_posts p {
-    font-size: 2rem;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    /* padding: 20px 10px; */
 }
 
 .newblog {
     margin-top: 100px;
 }
 
+/* from style */
+
+.form-group label {
+    margin-top: 20px;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.savebtn {
+    font-size: 1rem;
+    margin-top: 20px;
+
+}
 
 .footer {
     width: 100%;
